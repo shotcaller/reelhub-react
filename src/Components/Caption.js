@@ -21,6 +21,7 @@ const useStyles = makeStyles((theme) => ({
         border: '2px solid',
         borderColor: theme.palette.primary.light,
         marginTop: theme.spacing(4),
+        marginBottom: theme.spacing(2),
         '&:hover':{
             borderColor: pink['A200'],
             color: pink['A200'],

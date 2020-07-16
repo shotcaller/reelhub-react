@@ -44,7 +44,7 @@ export default function MovieSearchList(props) {
             setSearch(props.search)
             if(search!==''){
             setisFetching(true)
-            let data = await axios.get(`//api.themoviedb.org/3/search/movie/?api_key=${apiKey}&language=en-US&page=${currentPage}&query=${search}&include_adult=false`)
+            let data = await axios.get(`https://api.themoviedb.org/3/search/movie/?api_key=${apiKey}&language=en-US&page=${currentPage}&query=${search}&include_adult=false`)
            // let result = await data.json()
             console.log(data)
             setResults(data.data.results)
