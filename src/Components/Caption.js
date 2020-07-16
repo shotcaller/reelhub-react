@@ -39,8 +39,8 @@ export default function Caption() {
 
     return (
         <div>
-             <Grid container spacing={1}>
-              <Grid item xs={12} sm={5} >
+             <Grid container spacing={0}>
+              <Grid item xs={12} sm={4} >
               <Container className={classes.caption}>
                   <Typography color="textPrimary" variant="h1">YOUR<br /> MOVIE<br />HUB.</Typography>
                   <Button variant="outlined" className={classes.startbutton} onClick={handleClick}>
@@ -48,10 +48,12 @@ export default function Caption() {
                   </Button>
                   </Container>
               </Grid>
-              <Grid item xs={false} sm={7} >
+              <Grid item xs={false} sm={8} >
+              <div style={{display: 'flex', justifyContent: 'flex-end'}}>
                 <Suspense fallback={<LinearProgress color="secondary" />}>
-                  <img src='front.jpg' alt="Home" height="500px"      />
+                  <img src='front.jpg' alt="Home" height="500px"     />
                   </Suspense>
+                  </div>
               </Grid>
             </Grid>
 
